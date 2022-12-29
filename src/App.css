@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display-flex {
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-small {
+  font-size: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background: #2c3444 !important;
+  color: white;
+}
+.bell {
+  height: 20px;
+}
+.vendor-primary-bg {
+  background: #101929;
+  color: white;
+  padding: 2%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.vendor-primary-bg::-webkit-scrollbar {
+  border: 0;
+  background-color: transparent;
+}
+.vendor-secondary-bg {
+  background: #141f32;
+  color: white;
+  padding: 2%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.vendor-secondary-bg::-webkit-scrollbar {
+  border: 0;
+  background-color: transparent;
+}
+.primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px;
+  gap: 3.89px;
+  width: fit-content;
+  height: 41px;
+  background: rgba(28, 40, 63, 0.45);
+  color: white;
+  border-radius: 77.7248px;
+}
+.button {
+  border-radius: 77.7248px;
+  padding: 5%;
+  margin-left: 5%;
+}
+.primary-color {
+  background: #19253c;
+  color: white;
+}
+.active {
+  background: #2c3444 !important;
+  color: white;
+}
+.blue-bg {
+  background: #4539cc;
+  color: white;
+  width: 400px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+.green-bg {
+  background: #238226;
+  color: white;
+  width: 400px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+.red-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px;
+  gap: 3.89px;
+  width: fit-content;
+  height: 41px;
+  background: #dd3333;
+  color: white;
+  border-radius: 77.7248px;
+}
+.red-bg {
+  background: #c71f1f;
+  color: white;
+  width: 400px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+.yellow-bg {
+  background: #f09b1b;
+  color: black;
+  width: 400px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+button {
+  border: 0;
+  padding: 5%;
+}
+.nav {
+  width: 6%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #172339;
+}
+.nav div {
+  margin-top: 50%;
+  /* background: #238226; */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav div:hover {
+  background: rgba(255, 225, 225, 0.05);
+}
+.column-boxes {
+  overflow-y: scroll;
+  height: 215px;
+}
+.column-boxes::-webkit-scrollbar {
+  border: 0;
+  background-color: transparent;
+}
+.column-box {
+  height: 100px;
+  border: 0.6px solid rgba(204, 204, 204, 0.38);
+  border-radius: 10px;
+  margin-top: 2%;
+}
+.column-box-right {
+  height: 50px;
+  border: 0.6px solid rgba(204, 204, 204, 0.38);
+  border-radius: 10px;
+  margin-top: 2%;
+}
+.ride-alert-box {
+  height: 227.37px;
+  left: 1112px;
+  top: 155.63px;
+  border-radius: 16px;
+  background: #2c3444;
+}
+.bid-select {
+  padding: 10px;
+  gap: 4.88px;
   color: white;
+  width: 120px;
+  height: 51px;
+  background: #1d2940;
+  border-radius: 8.13754px;
+}
+/***** Focus Styles *****/
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+  outline: 8px solid  rgba(99, 47, 47, 0.64);
+  border-radius: 50%;
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 12px solid  rgba(99, 47, 47, 0.64);
+  border-radius: 50%;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #2c3444 !important;
+  border-radius: 10pc;
+  /* height: 12px; */
 }
 
-@keyframes App-logo-spin {
-  from {
+/******** Firefox ********/
+input[type="range"]::-moz-range-thumb {
+  outline: 8px solid#BF2626;
+  border-radius: 50%;   
+}
+
+
+/* POP up CSS */
+
+.popup{
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-box{
+  width: 700px;
+height: 400px;
+background: #141F32;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.popup-box-green{
+  width: 700px;
+height: 400px;
+background: #1F4926;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.close-popup{
+  position: absolute;
+  top: 0;
+  right:0;
+}
+.ring{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* border: 2px solid white; */
+  background: none;
+  animation: ring 2s linear infinite;
+}
+@keyframes ring{
+  0%{
     transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
   }
-  to {
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b210;
+  }
+  100%{
     transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
   }
+}
+.checkImg{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3%;
+}
+.search{
+  width: 95%;
+  padding: 5%;
 }
