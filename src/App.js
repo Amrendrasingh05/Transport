@@ -6,6 +6,8 @@ import { BrowserRouter as Router,Routes, Route, Link, Switch } from 'react-route
 import Dashboard from './Vendor/Dashboard.component'
 import Bidding from './Vendor/Bidding.component'
 import AssignDriver from './Vendor/AssignDriver.component'
+import ManageRide from './Vendor/ManageRide.component'
+import ManageDriver from './Vendor/ManageDriver.component'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Route exact path="/" component={Dashboard} />
       <Route exact path="/Bidding" component={Bidding} />
       <Route exact path="/AssignDriver" component={AssignDriver} />
+      <Route exact path="/ManageRide" component={ManageRide} />
+      <Route exact path="/ManageDriver" component={ManageDriver} />
       </Switch>
       </Router>
 

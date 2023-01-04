@@ -1,6 +1,7 @@
 import bell from '../Images/bell.png'
 import map from '../Images/map.png'
 import Popup from './WaitingPopup.component'
+import ChatBox from './ChatBox.component'
 import img2 from '../Images/Vector (2).png'
 import img3 from '../Images/Vector (3).png'
 import img4 from '../Images/Vector (4).png'
@@ -66,7 +67,7 @@ function Dashboard() {
 
                 <div className="column-box">
                         
-                    </div>
+                </div>
 
                 
 
@@ -83,13 +84,13 @@ function Dashboard() {
               <input type="search" placeholder='Search by names' name="" id="" className='search column-box-right active'/>
                
 
-               <Popup show={show} onClose={() => setShow(false)}/>
+               <ChatBox show={show} onCloseSucess={() => setShow(false)}/>
                
                
                <br />
 
                <div className='column-boxes' style={{height:"450px"}}>
-                    <div className="column-box">
+                    <div className="column-box" onClick={() => setShow(true)}>
                         
                     </div>
                     <div className="column-box">

@@ -65,6 +65,10 @@ button:hover {
   background: #2c3444 !important;
   color: white;
 }
+.active-red {
+  background: #bf2626;
+  color: white;
+}
 .blue-bg {
   background: #4539cc;
   color: white;
@@ -122,9 +126,12 @@ button {
   justify-content: center;
   background: #172339;
 }
+.Mt-5 {
+  margin-top: -5%;
+}
 .nav div {
-  margin-top: 50%;
-  /* background: #238226; */
+  margin-top: 40%;
+  cursor: pointer;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -149,12 +156,20 @@ button {
   border: 0.6px solid rgba(204, 204, 204, 0.38);
   border-radius: 10px;
   margin-top: 2%;
+  padding: 10px;
 }
 .column-box-right {
   height: 50px;
   border: 0.6px solid rgba(204, 204, 204, 0.38);
   border-radius: 10px;
   margin-top: 2%;
+}
+.column-area {
+  height: 240px;
+  border: 0.6px solid rgba(204, 204, 204, 0.38);
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 10px;
 }
 .ride-alert-box {
   height: 227.37px;
@@ -180,11 +195,11 @@ input[type="range"]:focus {
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 input[type="range"]::-webkit-slider-thumb {
-  outline: 8px solid  rgba(99, 47, 47, 0.64);
+  outline: 8px solid rgba(99, 47, 47, 0.64);
   border-radius: 50%;
 }
 input[type="range"]:focus::-webkit-slider-thumb {
-  outline: 12px solid  rgba(99, 47, 47, 0.64);
+  outline: 12px solid rgba(99, 47, 47, 0.64);
   border-radius: 50%;
 }
 input[type="range"]::-webkit-slider-runnable-track {
@@ -196,13 +211,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 /******** Firefox ********/
 input[type="range"]::-moz-range-thumb {
   outline: 8px solid#BF2626;
-  border-radius: 50%;   
+  border-radius: 50%;
 }
-
 
 /* POP up CSS */
 
-.popup{
+.popup {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
@@ -213,32 +227,42 @@ input[type="range"]::-moz-range-thumb {
   justify-content: center;
   align-items: center;
 }
-.popup-box{
+.popup-box {
   width: 700px;
-height: 400px;
-background: #141F32;
+  height: 400px;
+  background: #141f32;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.popup-box-green{
+.popup-box-green {
   width: 700px;
-height: 400px;
-background: #1F4926;
+  height: 400px;
+  background: #1f4926;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.close-popup{
+.close-popup {
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
 }
-.ring{
+.close-popup {
+  color: red !important;
+  background: rgb(36, 17, 17) !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -246,26 +270,108 @@ background: #1F4926;
   background: none;
   animation: ring 2s linear infinite;
 }
-@keyframes ring{
-  0%{
+@keyframes ring {
+  0% {
     transform: rotate(0deg);
     box-shadow: 1px 5px 2px #e65c00;
   }
-  50%{
+  50% {
     transform: rotate(180deg);
     box-shadow: 1px 5px 2px #18b210;
   }
-  100%{
+  100% {
     transform: rotate(360deg);
     box-shadow: 1px 5px 2px #0456c8;
   }
 }
-.checkImg{
+.checkImg {
   border: 1px solid white;
   border-radius: 50%;
   padding: 3%;
 }
-.search{
+.search {
   width: 95%;
+  padding: 5%;
+}
+
+.chat-popup {
+  background: #141f32;
+  color: white;
+  padding: 2%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 39%;
+  box-shadow: 0px 0px 100px 0px #000000;
+}
+.send-message {
+  position: absolute;
+  display: flex;
+}
+.send-message-img {
+  position: relative;
+  z-index: 111111;
+  display: flex;
+  margin-left: 85%;
+  margin-top: 5%;
+}
+.chat-area {
+  height: 70%;
+}
+.manage-rgb {
+  width: 360px;
+  height: 181.03px;
+  border-radius: 10px;
+  padding-top: 7%;
+  padding-left: 2%;
+}
+.column-img {
+  height: 70px;
+}
+.justifyalign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.align {
+  display: flex;
+  align-items: center;
+}
+.green-btn {
+  width: 150px;
+  height: 48px;
+  left: 1287.2px;
+  top: 334.75px;
+  color: green;
+  background: #304938;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.driverInfo-inpt {
+  width: 210px;
+  height: 45.48px;
+  border: 0;
+  background: #323b4e;
+  border-radius: 5px;
+  color: white;
+  padding: 5%;
+}
+.driverInfo-area {
+  width: 220;
+  height: 100px;
+  left: 920.5px;
+  top: 383.37px;
+  border: 0;
+  background: #323b4e;
+  border-radius: 5px;
+  color: white;
   padding: 5%;
 }

@@ -16,7 +16,7 @@ function Popup({show, onClose}){
     return(
         <div className="popup">
         <div className="popup-box">
-            <button className="btn-close close-popup" onClick={onClose}></button>
+            {/* <button className="close-popup" onClick={onClose}>X</button> */}
             <div className="ring"></div>
             <br />
             <h2>Waiting.....</h2>

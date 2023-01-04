@@ -7,7 +7,7 @@ function Popup({show, onCloseSucess}){
     return(
         <div className="popup">
         <div className="popup-box-green">
-            <button className="btn-close close-popup" onClick={onCloseSucess}></button>
+            {/* <button className="close-popup" onClick={onCloseSucess}>X</button> */}
             <img src={check} className="checkImg" alt="" />
             <br />
             <h2>Bid Accepted</h2>
@@ -17,7 +17,7 @@ function Popup({show, onCloseSucess}){
             <br />
             <br />
 
-            <button className="btn btn-danger"> Assign Deriver to Customer</button>
+            <button className="btn btn-danger" onClick={() => window.open("/AssignDriver","_self")}> Assign Deriver to Customer</button>
         </div>
         </div>
     );
