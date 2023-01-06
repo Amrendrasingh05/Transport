@@ -14,7 +14,7 @@ function Header(){
 <div><img src={profileDp} alt="" /></div>
 <div onClick={() => window.open("/","_self")}><img src={img} alt="" /></div>
 <div onClick={() => window.open("/bidding","_self")}><img src={img1} alt="" /></div>
-<div><img src={img2} alt="" /></div>
+{/* <div><img src={img2} alt="" /></div> */}
 <div><img src={img3} alt="" /></div>
 <div onClick={() => window.open("/ManageRide","_self")}><img src={img4} alt="" /></div>
 <div><img src={img5} alt="" /></div>

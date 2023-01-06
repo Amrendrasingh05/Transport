@@ -130,7 +130,7 @@ button {
   margin-top: -5%;
 }
 .nav div {
-  margin-top: 40%;
+  margin-top: 60%;
   cursor: pointer;
   height: 50px;
   width: 50px;
@@ -359,9 +359,9 @@ input[type="range"]::-moz-range-thumb {
   width: 210px;
   height: 45.48px;
   border: 0;
-  background: #323b4e;
+  background: #141f32;
+  color: gray;
   border-radius: 5px;
-  color: white;
   padding: 5%;
 }
 .driverInfo-area {
@@ -370,8 +370,31 @@ input[type="range"]::-moz-range-thumb {
   left: 920.5px;
   top: 383.37px;
   border: 0;
-  background: #323b4e;
+  background: #141f32;
   border-radius: 5px;
-  color: white;
+  color: gray;
+
   padding: 5%;
+}
+.outline-box {
+  height: 42px;
+  background: #141f32;
+  border: 1px solid rgba(92, 92, 92, 0.43);
+  border-radius: 2px;
+  padding: 5%;
+  color: gray;
+}
+.upload-img{
+  background: #162136;  
+  width: 80%;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.upload-png{
+  position: absolute;
+  margin-top: 5%;
+}
+#inputTag{
+  display: none;
 }

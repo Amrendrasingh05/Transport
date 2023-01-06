@@ -10,8 +10,8 @@ import eye from '../Images/eye.png'
 import call from '../Images/call.png'
 
 import Header from './Header.component'
-import Popup from './ManageDriverPopup.component'
-import AddDriver from './AddDriver.component'
+import Popup from './ManageVehiclePopup.component'
+import AddVehicle from './AddVehicle.component'
 
 function Dashboard() {
     const [show, setShow] = useState(false)
@@ -23,7 +23,7 @@ function Dashboard() {
             <div className='vendor-primary-bg' style={{ width: "100%" }}>
 
                 <div className="display-flex" style={{ justifyContent: "space-between" }}>
-                    <h4>Manage Driver</h4>
+                    <h4>Manage Vehicle</h4>
                     <img src={bell} alt="" className='bell' />
                 </div>
 
@@ -47,8 +47,8 @@ function Dashboard() {
 
                 <div className="display-flex">
                     <button className="primary-btn " onClick={() => window.open("/ManageRide", "_self")} style={{ paddingTop: "1.5%" }}> <h5>Rides</h5></button>&nbsp;
-                    <button className="primary-btn" onClick={() => window.open("/ManageVehicle", "_self")} style={{ paddingTop: "1.5%" }}><h5>Vehicle</h5></button>&nbsp;
-                    <button className="primary-btn active-red" onClick={() => window.open("/ManageDriver", "_self")} style={{ paddingTop: "1.5%" }}><h5>Driver</h5></button>
+                    <button className="primary-btn active-red" onClick={() => window.open("/ManageVehicle", "_self")} style={{ paddingTop: "1.5%" }}><h5>Vehicle</h5></button>&nbsp;
+                    <button className="primary-btn" onClick={() => window.open("/ManageDriver", "_self")} style={{ paddingTop: "1.5%" }}><h5>Driver</h5></button>
                     <button className='btn btn-outline-danger text-small' style={{marginLeft:"5%"}} onClick={() => setShow2(true)}>+Add</button>
                 </div>
                 <br />
@@ -62,7 +62,7 @@ function Dashboard() {
 
                 <Popup show={show} onClose={() => setShow(false)} />
 
-                <AddDriver show={show2} onClose={() => setShow2(false)} />
+                <AddVehicle show={show2} onClose={() => setShow2(false)} />
 
 
 
